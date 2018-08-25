@@ -18,7 +18,9 @@
 1. 做好commit
 2. 連接到我要傳的git位置
 3. push上去
+
 ![](https://i.imgur.com/e39GDFr.png)
+
 做完這裡，我的readme上去啦!
 ### 第二次 push
 欸？push不是一樣嗎？怎麼沒反應。

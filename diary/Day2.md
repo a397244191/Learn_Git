@@ -26,5 +26,7 @@ rm 也就是remove的縮寫，就是刪除的意思啦，將工作目錄下的�
 就是重置索引檔內容，將索引檔回復狀態，但是被刪除的實體檔案不會回來。若要將工作目錄也回復到目前最新版本狀態就用`git reset --hard`
 ### git checkout
 `git checkout master filename`會將master最新的檔案還原，這樣可避免`git reset`一次回復太多狀態。
+## push 失敗?
+本來打算今天這樣就收工，把Day2 push上去時出現了一些問題，google答案後，用newbranch的方式，merge完在push就成功了。
 ## 今日結語
 試用了一些指令，了解了一些git構造，算是對git有一定認識了吧。
