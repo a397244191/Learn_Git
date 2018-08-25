@@ -69,7 +69,9 @@ echo good > c.txt
 git add .
 git commit -m "add c.txt in master branch"
 ```
-啊，忘了載SourceTree，先補敘述晚點補圖。
+打算載SourceTree，卻需要登入，然後卡住了。只好用文章中的圖代替一下。而這圖就沒有對master做任何後續處理。
+
+![](https://i.imgur.com/8Hdio9g.png)
 
 由畫面可以看到，每個點就是每個索引檔，而每行所指的branch名稱分別對應到左方的索引檔點，而索引檔更新時間先後分別顯示在點的高低，最高的點最新，而最低的點最舊。
 ## 今日結語
