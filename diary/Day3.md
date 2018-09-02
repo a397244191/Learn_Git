@@ -19,7 +19,7 @@ git commit -m "a.txt: set 1 as content"
 git branch
 git branch branch1
 ```
-第一行，就是簡單的查看當前分支，這時只會看到一個，之後`git branch branchName`就可以製造出新的分支出來，當然你不會立刻跳去該分支，還是在原本的分支上。而這分支索代表的索引檔，即是當前狀況的索引檔。我們可以發現，目前其實索引檔狀況還是一直線，只是代表目前branch有兩個在目前狀況的索引檔上
+第一行，就是簡單的查看當前分支，這時只會看到一個，之後`git branch [branchName]`就可以製造出新的分支出來，當然你不會立刻跳去該分支，還是在原本的分支上。而這分支索代表的索引檔，即是當前狀況的索引檔。我們可以發現，目前其實索引檔狀況還是一直線，只是代表目前branch有兩個在目前狀況的索引檔上
 
 ### master繼續前進，branch1繼續停留
 ```
@@ -39,9 +39,9 @@ git commit -m "Modify b.txt with content 'branch2' in the branch2 branch"
 ![](https://i.imgur.com/TcADjUM.png)
 圖片的文字有些不同就先不管，HEAD就是我們現在正在的索引檔位置，而綠色那些字，就是該branch最後的地方，如果那些branch之後有動作且新增索引檔，就會離開這段branch的log內容。
 ### 切換分支
-剛我們創建branch2時就有看到`git checkout branchName`其實就是切換分支的方式，`-b`只是為了新增分支。
+剛我們創建branch2時就有看到`git checkout [branchName]`其實就是切換分支的方式，`-b`只是為了新增分支。
 ### 刪除分支
-刪除分支重點在於，不能在自己裡面刪除自己，就好比自己在努力也無法把自己提起來一樣，都必須靠別人，所以我們刪除branch1時，就要在master或branch2裡面才能刪除。而刪除方式就是`git branch -d branchName`。
+刪除分支重點在於，不能在自己裡面刪除自己，就好比自己在努力也無法把自己提起來一樣，都必須靠別人，所以我們刪除branch1時，就要在master或branch2裡面才能刪除。而刪除方式就是`git branch -d [branchName]`。
 ### 查看當前分支
 用`git branch`即可知道所有分支並知道深綠色就是當前分支，也可以用`git status`來查看狀況，得知現在分支位置。
 ![](https://i.imgur.com/ZDaHPhN.png)
@@ -49,10 +49,10 @@ git commit -m "Modify b.txt with content 'branch2' in the branch2 branch"
 因為我們練習中刪除了branch1，現在我想新增branch1回來怎麼辦?
 ```
 git log
-git checkout commitID
+git checkout [commitID]
 git branch newbranch1
 ```
-方法關鍵就是索引檔，我們刪除的branch1，它的索引檔是第二次創建的索引檔，那時候修改了a.txt，用`git log`查看當時的commit id用`git checkout commitID`即使那邊沒有branch，也能切換到當前索引檔狀態，而這時後只要`git branch newbranch1`就能在此創建一個newbranch1而跟當時的branch1一樣啦。
+方法關鍵就是索引檔，我們刪除的branch1，它的索引檔是第二次創建的索引檔，那時候修改了a.txt，用`git log`查看當時的commit id用`git checkout [commitID]`即使那邊沒有branch，也能切換到當前索引檔狀態，而這時後只要`git branch newbranch1`就能在此創建一個newbranch1而跟當時的branch1一樣啦。
 ```
 git checkout newbranch1
 echo newbranch1 > b.txt
