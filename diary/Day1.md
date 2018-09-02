@@ -12,7 +12,7 @@
 
 使用`git add .`就是將本資料夾內的所有檔案更新。
 ![](https://i.imgur.com/EBJZD55.png)
-
+ 
 ### 第一次 push
 文章內後面都是在做一些local的檔案管理，像是commit、rm...等，不過我想先嘗試上傳的感覺，就照著開啟repository的介紹三步驟跟著打
 1. 做好commit
