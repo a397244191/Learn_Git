@@ -10,7 +10,7 @@
 
 ## 查詢內容
 
-我們最常用的就是`git log`來查看一些簡單資訊，像是commit id 、作者名稱、日期、及他的簡介。而我們看到commit id後，便可以利用這些id來查詢更多內容，利用`git cat-file -p commitID`，來查看它所在的樹ID和它前一個parent的ID等。
+我們最常用的就是`git log`來查看一些簡單資訊，像是commit id 、作者名稱、日期、及他的簡介。而我們看到commit id後，便可以利用這些id來查詢更多內容，利用`git cat-file -p [commitID]`，來查看它所在的樹ID和它前一個parent的ID等。
 
 ![](https://i.imgur.com/9VNYbgb.png)
 
