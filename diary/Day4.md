@@ -15,14 +15,14 @@
 - `git diff`
   - 這行看似沒有加任何比較的東西，其實就是比較目前目錄上(workspace)的狀況跟當前索引狀況。
     - 在更新檔案後常常會`git add`幾次，而在`git add .`前，用`git diff`可以查看更改了什麼?
-- `git diff commit`
+- `git diff [commit]`
   - 在`git diff`後加上一個commitID，這是讓這個commit來跟workspace做比較。
     - 常用`git diff HEAD`即可查看跟最新commit的版本差異。
-- `git diff --cached commit`
+- `git diff --cached [commit]`
   - 不同於前兩者，被比較的不在是workspace，這裡是目前的索引檔，而它的比較對像則是目前最新版本的索引檔。
     - 與前者不同是，沒有被`git add .`過的東西不會被查看到。
     - 也是最常用`git diff --cached HEAD`來查看`add`的東西和最新commit的版本差異。
-- `git diff commit1 commit2`
+- `git diff [commit1] [commit2]`
   - 很直接的，拿了兩個版本做比較。
     - 常見的方式有`git diff HEAD^ HEAD`或是`git diff HEAD~2 HEAD`分別是讓所有commit的版本中，最新前一版跟最新版，和最新前兩版跟最新版的比較
 
