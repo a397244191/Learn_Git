@@ -32,7 +32,7 @@
   - 不過還沒merge過，不知道狀況。
 
 ### 創建參照名稱
-`git update-ref Name commitID`就能創建一個參照名稱給特定commitID，不過這裡要注意的是在刪除上。我用`git update-ref -d Name`時遇到的狀況。
+`git update-ref [Name] [commitID]`就能創建一個參照名稱給特定commitID，不過這裡要注意的是在刪除上。我用`git update-ref -d [Name]`時遇到的狀況。
 
 ![](https://i.imgur.com/78ifEO1.png)
 
@@ -44,7 +44,7 @@
 ![](https://i.imgur.com/WbdtGNO.png)
 
 ### symref創建
-`git symbolic-ref Name branch`這樣做法，Name裡面就會有包含branch的資訊並追蹤它，就能做到跟內有的HEAD有相同效果。這實在很神奇。
+`git symbolic-ref [Name] [branch]`這樣做法，Name裡面就會有包含branch的資訊並追蹤它，就能做到跟內有的HEAD有相同效果。這實在很神奇。
 
 ## 今日結語
 看了一堆給名稱跟名稱的用法後，除了發現它的用處外，更是發現不少它神奇的方法。感覺這些東西越來越有趣了。
