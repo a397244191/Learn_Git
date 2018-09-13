@@ -16,7 +16,7 @@ git init --bare
 `--bare`的參數就是建立一個空的repositray來給我麼存取，裡面就是跟local端的`.git`裡面放的東西一樣。
 
 ## 創建使用者
-首先我們需要創建兩個 ~~(更多也可以，但沒必要)~~ ，分別使用`git clone project.git use1WD`跟`git clone project.git use2WD`，這裡我犯了個小小問題，就是還沒有個初始版本就做`clone`不過它很好心的跳出waring而已，資料夾還是創建了。發現後，我趕緊用use1建立初始版本push上去，再讓use2載下來。
+首先我們需要創建兩個 ~~(更多也可以，但沒必要)~~ ，分別使用`git clone project.git use1WD`跟`git clone project.git use2WD`，這裡我犯了個小小問題，就是還沒有個初始版本就做`clone`不過它很好心的跳出warning而已，資料夾還是創建了。發現後，我趕緊用use1建立初始版本push上去，再讓use2載下來。
 
 ![](https://i.imgur.com/zlmKX0W.png)
 
